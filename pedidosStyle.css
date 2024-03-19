@@ -1,1 +1,33 @@
+/*CSS temporario, codigo será refatorado*/
 
+#input_cod {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabela_de_produtos {
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+#botoes_acao {
+    display: flex;
+    justify-content: space-evenly;
+}

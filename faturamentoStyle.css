@@ -1,1 +1,28 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+div {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px;
+    width: 56%;
+}
+
+input {
+    width: 122px;
+}
+
+button {
+    margin: 50px 0px;
+}

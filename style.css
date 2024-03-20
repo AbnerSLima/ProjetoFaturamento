@@ -1,6 +1,11 @@
 /*Aqui ficarão os estilos que valem pra todos o site*/
-h1 {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+h1 {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
 }

@@ -21,50 +21,14 @@
         <table>
             <tbody>
                 <tr id="linha_principal">
-                    <td>Descrição</td>
-                    <td>Cor</td>
-                    <td>Tamanho</td>
-                    <td>Quantidade</td> 
-                    <td>Preço</td>                               
-                    <td>Valor total</td>
+                    <th>Descrição</th>
+                    <th>Quantidade</th> 
+                    <th>Preço</th>                               
+                    <th>Valor total</th>
                 </tr>
                 <tr>
                     <td>Exemplo 01</td>
-                    <td>PT</td>
                     <td>2</td>
-                    <td>2</td> 
-                    <td>R$50,00</td>                               
-                    <td>R$100</td>
-                </tr>
-                <tr>
-                    <td>Exemplo 02</td>
-                    <td>PT</td>
-                    <td>2</td>
-                    <td>2</td> 
-                    <td>R$50,00</td>                               
-                    <td>R$100</td>
-                </tr>
-                <tr>
-                    <td>Exemplo 03</td>
-                    <td>PT</td>
-                    <td>2</td>
-                    <td>2</td> 
-                    <td>R$50,00</td>                               
-                    <td>R$100</td>
-                </tr>
-                <tr>
-                    <td>Exemplo 04</td>
-                    <td>PT</td>
-                    <td>2</td>
-                    <td>2</td> 
-                    <td>R$50,00</td>                               
-                    <td>R$100</td>
-                </tr>
-                <tr>
-                    <td>Exemplo 05</td>
-                    <td>PT</td>
-                    <td>2</td>
-                    <td>2</td> 
                     <td>R$50,00</td>                               
                     <td>R$100</td>
                 </tr>
@@ -74,9 +38,10 @@
 
         <div id="botoes_acao">
             <button>Voltar</button>
-            <input type="submit" name="faturar" value="FATURAR">
+            <button type="button" name="faturar" id="faturarButton">FATURAR</button>
             <div>
                 <h3>Valor total:</h3>
+                <input type="number" id="valor_total_venda" name="valor_total" value="" readonly>
             </div>
         </div>
     </main>

@@ -1,11 +1,4 @@
-/*Estilo h1 temporario, apagar no final do projeto pois estará no arquivo style.css*/
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;

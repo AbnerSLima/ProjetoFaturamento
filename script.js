@@ -1,10 +1,16 @@
-/* Pagina Pedidos */
-const faturarButton = document.getElementById('faturarButton');
+/* Pagina Home */
 
-faturarButton.addEventListener('click', function() {
-    const valorTotal = document.getElementById("valor_total_venda").value;
-    window.location.href = "faturamento.html?valor_total=" + valorTotal;
-});
+/* Pagina Produtos */
+
+/* Pagina Pedidos */
+
+/*Precisa-se criar um cauculo onde todas as */
+var valorTotalVenda = 500
+const valorTotalPedido = document.querySelector('#valor_total_venda')
+valorTotalPedido.textContent = valorTotalVenda
+
+
+const faturarButton = document.getElementById('faturarButton');
 
 /* Pagina Faturamento */
 function atualizarValorAPagar() {

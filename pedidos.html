@@ -14,24 +14,50 @@
     <main>
         <div id="input_cod">
             <label for="cod_de_barras">COD. DE BARRAS: </label>
-            <input id="cod_de_barras" type="text" name="cod_de_barras">
+            <input type="text" id="cod_de_barras" name="cod_de_barras">
+            <button onclick="adicionarItem()">Adicionar Item</button>
         </div>
-
-        <div id="tabela_de_produtos">
-        <table>
-            <tbody>
+        <template>
+            <table id="lista-itens">
+                <thead>
+                    <tr>
+                        <th>Código de Barras</th>
+                        <th>Descrição do Produto</th>
+                        <th>Valor do Produto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7899454434027</td>
+                        <td>Fode de Ouvido</td>
+                        <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                        <td>7896189200491</td>
+                        <td>Limpa tela</td>
+                        <td>R$ 20,00</td>
+                    </tr>
+                    <tr>
+                        <td>7899846012239</td>
+                        <td>Perfume</td>
+                        <td>R$ 50,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+        
+        <div>
+        <table id="lista_de_itens">
+            <thead>
                 <tr id="linha_principal">
                     <th>Descrição</th>
                     <th>Quantidade</th> 
                     <th>Preço</th>                               
                     <th>Valor total</th>
                 </tr>
-                <tr>
-                    <td>Exemplo 01</td>
-                    <td>2</td>
-                    <td>R$50,00</td>                               
-                    <td>R$100</td>
-                </tr>
+            </thead>
+            <tbody>
+                
             </tbody>
         </table>
         </div>

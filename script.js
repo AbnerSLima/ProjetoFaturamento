@@ -3,9 +3,26 @@
 /* Pagina Produtos */
 
 /* Pagina Pedidos */
+document.addEventListener("DOMContentLoaded", function() {
+function adicionarItem() {
+    const codigo = document.getElementById('cod_de_barras').value;
+    const listaItens = document.getElementById('lista-itens').querySelectorAll('tbody tr');
+    const listaPedidos = document.getElementById('lista_de_itens').querySelector('tbody');
 
-/*Precisa-se criar um cauculo onde todas as */
-var valorTotalVenda = 500
+    listaItens.forEach(item => {
+        if (item.cells[0].textContent === codigo) {
+            const descricao = item.cells[1].textContent;
+            const valor = item.cells[2].textContent;
+            const newRow = listaPedidos.insertRow();
+            newRow.insertCell(0).textContent = codigo;
+            newRow.insertCell(1).textContent = descricao;
+            newRow.insertCell(2).textContent = valor;
+        }
+    });
+}
+});
+
+var valorTotalVenda = 500 /*Precisa-se criar um cauculo onde todas as */
 const valorTotalPedido = document.querySelector('#valor_total_venda')
 valorTotalPedido.textContent = valorTotalVenda
 
@@ -24,9 +41,9 @@ function atualizarValorAPagar() {
     document.getElementById("valor_a_pagar").value = valorAPagar.toFixed(2);
 }
 
-/* Pagina Romaneio */
+/* Pagina Romaneio 
 const button_print=document.getElementById("button_print")
 
 button_print.addEventListener("click",(evt)=>{
     window.print()
-})
+})*/

@@ -6,6 +6,10 @@
     padding: 10px;
 }
 
+.ocultar-tabela {
+    display: none;
+}
+
 h1 {
     display: flex;
     justify-content: center;

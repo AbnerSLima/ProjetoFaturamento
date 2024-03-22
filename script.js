@@ -3,7 +3,15 @@
 /* Pagina Produtos */
 
 /* Pagina Pedidos */
+document.getElementById('cod_de_barras').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        adicionarItem();
+    }
+});
+
 function adicionarItem() {
+
+    var campo_cod = document.getElementById('cod_de_barras');
     console.log('dando certo')
     const codigo = document.getElementById('cod_de_barras').value;
     const listaItens = document.getElementById('lista-itens').querySelectorAll('tbody tr');
@@ -21,7 +29,10 @@ function adicionarItem() {
             newRow.insertCell(3).textContent = valor;
         }
     });
+    campo_cod.value = "";    
 }
+
+
 
 var valorTotalVenda = 500 /*Precisa-se criar um cauculo onde todas as */
 const valorTotalPedido = document.querySelector('#valor_total_venda')

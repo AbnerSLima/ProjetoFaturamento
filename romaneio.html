@@ -55,6 +55,12 @@
     
         <button id="button_print">Imprimir</button>
     </main>
-    <script src="./script.js"></script>
+    <script>
+        const button_print=document.getElementById("button_print")
+
+button_print.addEventListener("click",(evt)=>{
+    window.print()
+})
+    </script>
 </body>
 </html>

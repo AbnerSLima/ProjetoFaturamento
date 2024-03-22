@@ -41,6 +41,11 @@ valorTotalPedido.textContent = valorTotalVenda
 
 const faturarButton = document.getElementById('faturarButton');
 
+document.getElementById('faturarButton').addEventListener('click', function() {
+    window.location.href = 'faturamento.html';
+});
+
+
 /* Pagina Faturamento */
 function atualizarValorAPagar() {
     let valorTotalFaturamento = document.getElementById("valor_total").value;
